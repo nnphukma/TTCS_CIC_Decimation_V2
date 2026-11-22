@@ -4,7 +4,7 @@
  Kit: Artix A7 100T (xc7a100tcsg324-1) | Tool: Vivado 2025
 ========================================================================
 
-[X] BƯỚC 0 - CHUẨN BỊ MÔI TRƯỜNG (0.5 ngày)
+[x] BƯỚC 0 - CHUẨN BỊ MÔI TRƯỜNG (0.5 ngày)
     - Tạo RTL Project trong Vivado 2025, part xc7a100tcsg324-1 -> Hoàn thành
     - Xác nhận XSim hoạt động (chạy 1 testbench "hello world")
     - Cài Python + NumPy + SciPy (golden model)
@@ -13,51 +13,51 @@
 
 ------------------------------------------------------------------------
 
-[X] BƯỚC 1 - GOLDEN MODEL PYTHON (1 tuần)
-    - [X] 1a. Mô hình floating-point: integrator -> decimate -> comb
-    - [X] 1b. Vẽ đáp ứng tần số (FFT/freqz), xác nhận null tại k*Fs_out/M
-    - [X] 1c. Xác nhận độ lợi (R*M)^N và stopband attenuation
-    - [X] 1d. Mô hình fixed-point bit-accurate (đúng số bit, đúng cắt bit)
-    - [X] 1e. Sinh file stimulus (.mem/.txt) và expected output
-    - [X] 1f. Đánh giá SNR/SFDR/ENOB sau khi cắt bit
-    - [X] Hoàn thành bước 1
+[x] BƯỚC 1 - GOLDEN MODEL PYTHON (1 tuần)
+    - [x] 1a. Mô hình floating-point: integrator -> decimate -> comb
+    - [x] 1b. Vẽ đáp ứng tần số (FFT/freqz), xác nhận null tại k*Fs_out/M
+    - [x] 1c. Xác nhận độ lợi (R*M)^N và stopband attenuation
+    - [x] 1d. Mô hình fixed-point bit-accurate (đúng số bit, đúng cắt bit)
+    - [x] 1e. Sinh file stimulus (.mem/.txt) và expected output
+    - [x] 1f. Đánh giá SNR/SFDR/ENOB sau khi cắt bit
+    - [x] Hoàn thành bước 1
 
 ------------------------------------------------------------------------
 
-[X] BƯỚC 2 - THIẾT KẾ KIẾN TRÚC TRÊN GIẤY (1-2 ngày)
-    - [X] 2a. Sơ đồ khối: N integrator -> decimator(R) -> N comb
-    - [X] 2b. Bảng độ rộng bit tại mỗi điểm nối
-    - [X] 2c. Bảng cắt bit Hogenauer: d_k cho từng tầng
-    - [X] 2d. Định nghĩa giao diện module (clk, rst, data_in,
+[x] BƯỚC 2 - THIẾT KẾ KIẾN TRÚC TRÊN GIẤY (1-2 ngày)
+    - [x] 2a. Sơ đồ khối: N integrator -> decimator(R) -> N comb
+    - [x] 2b. Bảng độ rộng bit tại mỗi điểm nối
+    - [x] 2c. Bảng cắt bit Hogenauer: d_k cho từng tầng
+    - [x] 2d. Định nghĩa giao diện module (clk, rst, data_in,
            data_in_valid, data_out, data_out_valid)
-    - [X] 2e. Chốt chiến lược clock-enable (không tạo clock chia tần)
-    - [X] Hoàn thành bước 2
+    - [x] 2e. Chốt chiến lược clock-enable (không tạo clock chia tần)
+    - [x] Hoàn thành bước 2
 
 ------------------------------------------------------------------------
 
-[X] BƯỚC 3 - VIẾT RTL BOTTOM-UP (1 tuần)
-    - [X] 3a. integrator.v + testbench (impulse/ramp/hằng số)
-    - [X] 3b. comb.v + testbench (impulse -> delta[n]-delta[n-M])
-    - [X] 3c. decimator.v + testbench (đếm modulo R)
-    - [X] 3d. cic_decimator.v (top-level) nối N integrator,
+[x] BƯỚC 3 - VIẾT RTL BOTTOM-UP (1 tuần)
+    - [x] 3a. integrator.v + testbench (impulse/ramp/hằng số)
+    - [x] 3b. comb.v + testbench (impulse -> delta[n]-delta[n-M])
+    - [x] 3c. decimator.v + testbench (đếm modulo R)
+    - [x] 3d. cic_decimator.v (top-level) nối N integrator,
            decimator, N comb, đúng độ rộng bit
-    - [X] 3e. Mỗi module PASS unit test trước khi lên tầng trên
-    - [X] Hoàn thành bước 3
+    - [x] 3e. Mỗi module PASS unit test trước khi lên tầng trên
+    - [x] Hoàn thành bước 3
 
 ------------------------------------------------------------------------
 
-[~] BƯỚC 4 - TESTBENCH 3 TẦNG
-    [X] 4a. Unit test từng module
-    [X] 4b. Integration test: đọc MEM và đối chiếu 312 mẫu
-    [X] 4b. Bổ sung fwrite xuất kết quả RTL (nếu chưa có)
-    [X] 4c. Đánh giá FFT, SNR, SFDR, null position
+[] BƯỚC 4 - TESTBENCH 3 TẦNG
+    [] 4a. Unit test từng module
+    [] 4b. Integration test: đọc MEM và đối chiếu 312 mẫu
+    [] 4b. Bổ sung fwrite xuất kết quả RTL (nếu chưa có)
+    [] 4c. Đánh giá FFT, SNR, SFDR, null position
     [ ] 4d. Hoàn thiện self-checking với $fatal
     [ ] Hoàn thành bước 4
 
 ------------------------------------------------------------------------
 
 [~] BƯỚC 5 - SIMULATION TRONG VIVADO
-    [X] 5a. Behavioral Simulation - PASS
+    [] 5a. Behavioral Simulation - PASS
     [ ] 5b. Post-Synthesis Simulation
     [ ] 5c. Post-Implementation Timing Simulation
     [ ] 5d. PASS cả 3 cấp mô phỏng
