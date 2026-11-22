@@ -1,0 +1,62 @@
+# ==============================================================================
+# 1. XILINX VIVADO GENERATED ARTIFACTS
+# (Giữ lại *.xpr và *.srcs/; loại bỏ toàn bộ thư mục build, cache, simulation)
+# ==============================================================================
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.runs/
+*.gen/
+*.tmp/
+.Xil/
+
+# File log, journal và waveform của Vivado / XSim
+vivado*.jou
+vivado*.log
+vivado*.str
+*.backup.jou
+*.backup.log
+webtalk*
+usage_statistics_webtalk.*
+*.pb
+*.wdb
+*.vcd
+*.dmp
+*.jou
+*.log
+
+# ==============================================================================
+# 2. SIMULATION GENERATED OUTPUTS
+# (Giữ lại verification/vectors/; bỏ qua dữ liệu xuất tự động khi chạy XSim)
+# ==============================================================================
+verification/results/*
+!verification/results/.gitkeep
+
+# ==============================================================================
+# 3. PYTHON ENVIRONMENT & CACHE
+# ==============================================================================
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ==============================================================================
+# 4. OS, EDITOR & TEMPORARY FILES
+# ==============================================================================
+structure.txt
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.bak
+*.swp
+*~
+
+# Giữ cấu hình chung của VS Code (nếu có), bỏ qua cache cá nhân
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
