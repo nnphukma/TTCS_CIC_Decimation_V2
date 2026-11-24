@@ -30,8 +30,8 @@ usage_statistics_webtalk.*
 # 2. SIMULATION GENERATED OUTPUTS
 # (Giữ lại verification/vectors/; bỏ qua dữ liệu xuất tự động khi chạy XSim)
 # ==============================================================================
-verification/results/*
-!verification/results/.gitkeep
+# verification/results/*
+# !verification/results/.gitkeep
 
 # ==============================================================================
 # 3. PYTHON ENVIRONMENT & CACHE

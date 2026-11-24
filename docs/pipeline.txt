@@ -46,13 +46,13 @@
 
 ------------------------------------------------------------------------
 
-[] BƯỚC 4 - TESTBENCH 3 TẦNG
-    [] 4a. Unit test từng module
-    [] 4b. Integration test: đọc MEM và đối chiếu 312 mẫu
-    [] 4b. Bổ sung fwrite xuất kết quả RTL (nếu chưa có)
-    [] 4c. Đánh giá FFT, SNR, SFDR, null position
-    [ ] 4d. Hoàn thiện self-checking với $fatal
-    [ ] Hoàn thành bước 4
+[X] BƯỚC 4 - TESTBENCH 3 TẦNG
+    [X] 4a. Unit test từng module
+    [X] 4b. Integration test: đọc MEM và đối chiếu 312 mẫu
+    [X] 4b. Bổ sung fwrite xuất kết quả RTL (nếu chưa có)
+    [X] 4c. Đánh giá FFT, SNR, SFDR, null position
+    [X] 4d. Hoàn thiện self-checking với $fatal
+    [X] Hoàn thành bước 4
 
 ------------------------------------------------------------------------
 
@@ -65,20 +65,20 @@
 
 ------------------------------------------------------------------------
 
-[ ] BƯỚC 6 - SYNTHESIS & IMPLEMENTATION (1 tuần, KHÔNG cần board)
-    - [ ] 6a. Synthesis -> xem Utilization Report (LUT/FF/DSP/BRAM)
-    - [ ] 6b. Đối chiếu tài nguyên với A7 100T
+[X] BƯỚC 6 - SYNTHESIS & IMPLEMENTATION (1 tuần, KHÔNG cần board)
+    - [X] 6a. Synthesis -> xem Utilization Report (LUT/FF/DSP/BRAM)
+    - [X] 6b. Đối chiếu tài nguyên với A7 100T
            (~63K LUT, 126K FF, 240 DSP, 135 BRAM)
-    - [ ] 6c. Implementation -> Timing Summary, mục tiêu WNS >= 0
+    - [X] 6c. Implementation -> Timing Summary, mục tiêu WNS >= 0
            tại tần số Fs_in mục tiêu
-    - [ ] 6d. Nếu WNS < 0: thêm pipeline vào chuỗi integrator
-    - [ ] 6e. Xem Power Report
-    - [ ] 6f. Generate Bitstream (file .bit sẵn sàng nạp board)
-    - [ ] Hoàn thành bước 6
+    - [X] 6d. Nếu WNS < 0: thêm pipeline vào chuỗi integrator
+    - [X] 6e. Xem Power Report
+    - [X] 6f. Generate Bitstream (file .bit sẵn sàng nạp board)
+    - [X] Hoàn thành bước 6
 
 ------------------------------------------------------------------------
 
-[ ] BƯỚC 7 - TÀI LIỆU HÓA (3-4 ngày)
+[X] BƯỚC 7 - TÀI LIỆU HÓA (3-4 ngày)
     - [ ] 7a. Báo cáo lý thuyết CIC (công thức, đáp ứng tần số,
            chứng minh integrator-comb)
     - [ ] 7b. Bảng tham số thiết kế (R, M, N, B_in, B_out, bảng cắt bit)
