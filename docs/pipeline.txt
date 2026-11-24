@@ -56,12 +56,12 @@
 
 ------------------------------------------------------------------------
 
-[~] BƯỚC 5 - SIMULATION TRONG VIVADO
-    [] 5a. Behavioral Simulation - PASS
-    [ ] 5b. Post-Synthesis Simulation
-    [ ] 5c. Post-Implementation Timing Simulation
-    [ ] 5d. PASS cả 3 cấp mô phỏng
-    [ ] Hoàn thành bước 5
+[X] BƯỚC 5 - SIMULATION TRONG VIVADO
+    [X] 5a. Behavioral Simulation - PASS
+    [X] 5b. Post-Synthesis Simulation
+    [X] 5c. Post-Implementation Timing Simulation
+    [X] 5d. PASS cả 3 cấp mô phỏng
+    [X] Hoàn thành bước 5
 
 ------------------------------------------------------------------------
 
